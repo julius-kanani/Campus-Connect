@@ -1,0 +1,7 @@
+Flask
+Flask-SQLAlchemy
+Flask-WTF
+Flask-Login
+Flask-Migrate
+psycopg2-binary  # For PostgreSQL
+pymysql  # For MySQL
