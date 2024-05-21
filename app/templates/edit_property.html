@@ -1,0 +1,21 @@
+<!-- templates/edit_property.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Property</title>
+    <!-- Add any CSS or styling links here -->
+</head>
+<body>
+    <h1>Edit Property</h1>
+    <form action="{{ url_for('main.edit_property', property_id=property.id) }}" method="POST">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" value="{{ property.title }}"><br>
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description">{{ property.description }}</textarea><br>
+        <!-- Add more input fields for property details -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
