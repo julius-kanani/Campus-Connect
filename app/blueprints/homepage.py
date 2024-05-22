@@ -20,3 +20,8 @@ def index():
 def about():
     """about endpoint."""
     return render_template('homepage/about.html')
+
+@bp.route('/contact', methods=('GET', 'POST'))
+def contact():
+    """Contact endpoint."""
+    return render_template('homepage/contact.html')

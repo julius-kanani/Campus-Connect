@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Campus Connect{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <!-- Add any other meta tags, CSS links, or scripts you need -->
+</head>
+<body>
+
+<header class="sticky-header">
+    <nav>
+        <!-- Your navigation links here -->
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('home.about') }}">About</a></li>
+        <li><a href="{{ url_for('home.contact') }}">Contact</a></li>
+    </nav>
+</header>
+
+<div class="content">
+    {% block content %}{% endblock %}
+</div>
+
+<!-- Your scripts or other HTML content -->
+
+</body>
+</html>
