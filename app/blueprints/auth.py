@@ -20,3 +20,8 @@ def register():
 def login():
     """Login endpoint."""
     return render_template('auth/login.html')
+
+@bp.route('/forgot_password', methods=('GET', 'POST'))
+def forgot_password():
+    """Forgot Password endpoint."""
+    return render_template('auth/forgot_password.html')

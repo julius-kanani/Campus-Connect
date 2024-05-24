@@ -28,6 +28,13 @@
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Account</a>
+          <div class="dropdown-content">
+            <a href="{{ url_for('auth.login') }}">Login</a>
+            <a href="{{ url_for('auth.register') }}">Sign Up</a>
+          </div>
+        </li>
       </ul>
     </nav>
 
