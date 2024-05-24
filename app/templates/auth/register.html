@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Campus Connect</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/auth/register.css') }}">
+    <!-- Add any additional CSS or external libraries here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput.min.js"></script>
+
+</head>
+<body>
+    <header>
+      <!--
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Rental Management System">
+        </div>
+      -->
+      <h1>Welcome to, Campus Connect</h1>  
+      <h2>Create Your Account</h2>
+    </header>
+    <main>
+        <form id="signup-form" action="{{ url_for('auth.register') }}" method="POST">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                 <div class="phone-group">
+                   <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                 </div>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="agree-to-terms" required>
+                <label for="agree-to-terms">I agree to the <a href="{{ url_for('home.terms_of_service') }}">Terms of Service</a> and <a href="{{ url_for('home.privacy_policy') }}">Privacy Policy</a></label>
+            </div>
+            <div class="form-group">
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+        <div class="social-signup">
+            <button class="google-signup">Sign Up with Google</button>
+            <button class="facebook-signup">Sign Up with Facebook</button>
+        </div>
+        <div class="login-link">
+            <p>Already have an account? <a href="{{ url_for('auth.login') }}">Login</a></p>
+        </div>
+        <div class="error-message" id="error-message"></div>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home.index') }}">Home</a></li>
+                <li><a href="{{ url_for('home.about') }}">About</a></li>
+                <li><a href="{{ url_for('home.contact') }}">Contact</a></li>
+                <li><a href="{{ url_for('home.terms_of_service') }}">Terms of Service</a></li>
+                <li><a href="{{ url_for('home.privacy_policy') }}">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <!-- Add any additional JavaScript here -->
+    <script src="{{ url_for('static', filename='scripts/register/initializeIntlTelInput.js') }}"></script>
+</body>
+</html>

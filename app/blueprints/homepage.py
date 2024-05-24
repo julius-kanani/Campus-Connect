@@ -25,3 +25,13 @@ def about():
 def contact():
     """Contact endpoint."""
     return render_template('homepage/contact.html')
+
+@bp.route('/terms_of_service', methods=('GET', 'POST'))
+def terms_of_service():
+    """Terms Of Service endpoint."""
+    return render_template('homepage/terms_of_service.html')
+
+@bp.route('/privacy_policy', methods=('GET', 'POST'))
+def privacy_policy():
+    """Privacy Policy endpoint."""
+    return render_template('homepage/privacy_policy.html')

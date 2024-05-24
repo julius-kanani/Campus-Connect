@@ -1,0 +1,134 @@
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 20px 0; /* Adjust padding for spacing */
+    background-color: #f8f9fa; /* Optional: Add background color */
+}
+
+/* Welcome Message Styling */
+header h1 {
+    font-size: 26px; /* Choose an appropriate font size */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Choose an eye-catching font */
+    color: #333; /* Set text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Apply text shadow */
+}
+
+/* Form Styling */
+main {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.phone-group {
+    display: flex;
+    align-items: center;
+}
+
+#country-code {
+    width: 70px; /* Adjust width as needed */
+    margin-right: 10px; /* Add spacing between country code and phone number */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff5733; /* Use the same theme color as login button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Social Sign-Up Styling */
+.social-signup {
+    margin-top: 20px;
+}
+
+.social-signup button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ff5733; /* Use the same theme color as login button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.social-signup button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Login Link Styling */
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: #ff5733; /* Use the same theme color as login link */
+}
+
+.login-link a:hover {
+    color: #0056b3; /* Darker shade on hover */
+}
+
+/* Error Message Styling */
+.error-message {
+    color: #ff0000;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
