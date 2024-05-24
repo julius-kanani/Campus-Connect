@@ -1,0 +1,26 @@
+#search {
+    padding: 50px 0;
+    text-align: center;
+}
+.search-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.search-container input {
+    width: 70%;
+    padding: 10px;
+    font-size: 1em;
+    margin-right: 10px;
+}
+.search-container button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ff5733;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.search-container button:hover {
+    background-color: #c70039;
+}

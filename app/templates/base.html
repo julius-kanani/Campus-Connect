@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campus Connect</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename="css/index.css") }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/index/header.css") }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/index/navbar.css") }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/index/search-bar.css") }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/index/featured-listings.css") }}">
   </head>
 
   <body>
@@ -16,5 +19,51 @@
         <button class="cta-button">Get Started</button>
       </div>
     </header>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="search">
+      <div class="search-container">
+        <h2> Find Your Perfect Rental</h2>
+        <form action="/search" method="GET">
+          <input type="text" name="query" placeholder="Search for properties...">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="featured-listings">
+      <h2>Featured Listings</h2>
+      <div class="listings-carousel">
+        <div class="listing">
+          <img src="property1.jpg" alt="Property Image">
+          <h3>Property Title</h3>
+          <p>Short description of the property.</p>
+        </div>
+        <!-- Repeat listing div for more properties -->
+        <div class="listing">
+          <img src="property1.jpg" alt="Property Image">
+          <h3>Property Title</h3>
+          <p>Short description of the property.</p>
+        </div>
+        <div class="listing">
+          <img src="property1.jpg" alt="Property Image">
+          <h3>Property Title</h3>
+          <p>Short description of the property.</p>
+        </div>
+        <div class="listing">
+          <img src="property1.jpg" alt="Property Image">
+          <h3>Property Title</h3>
+          <p>Short description of the property.</p>
+        </div>
+      </div>
+    </section>
+
   </body>
 </html>
