@@ -37,7 +37,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
 }
 
-.cta-button {
+.header-cta-button {
     background-color: #ff5733;
     border: none;
     padding: 15px 30px;
@@ -50,6 +50,6 @@
     border-radius: 5px; /* Rounded corners */
 }
 
-.cta-button:hover {
+.header-cta-button:hover {
     background-color: #c70039;
 }
