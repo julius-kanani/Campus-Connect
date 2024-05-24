@@ -34,7 +34,7 @@ def create_app(test_config=None):
     except OSError:
         pass
 
-    from app.blueprints  import auth, homepage
+    from web_app.blueprints  import auth, homepage
     app.register_blueprint(auth.bp)
     app.register_blueprint(homepage.bp)
     app.add_url_rule('/', endpoint='index')
